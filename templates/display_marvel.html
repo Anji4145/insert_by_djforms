@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_marvel</h1>
+        <table border="2px">
+            <tr>
+                <th>mname</th>
+                <th>mid</th>
+                <th>mlan</th>
+            </tr>
+            {% for i in MA %}
+            <tr>
+                <td>{{i.mname}}</td>
+                <td>{{i.mid}}</td>
+                <td>{{i.mlan}}</td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
